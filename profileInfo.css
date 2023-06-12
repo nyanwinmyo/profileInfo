@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.darkmode {
+  position: absolute;
+  top: 56px;
+  right: 110px;
+  font-weight: bold;
+}
+.dark {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  display: none;
+}
+.lightmode {
+  position: absolute;
+  top: 56px;
+  right: 110px;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
+.name {
+  font-size: 1.5em;
+}
+.pos {
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  width: 320px;
+  text-align: center;
+  background: #9f9999;
+  border-radius: 10px;
+}
+.profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: white;
+}
+.line {
+  width: auto;
+  height: 1px;
+  background-color: white;
+  margin-top: 15px;
+}
+ul li {
+  display: block;
+  margin-top: 20px;
+}
+.position {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  background-color: white;
+  height: 35px;
+  border-radius: 5px;
+}
+button {
+  width: 180px;
+  height: 30px;
+  border-radius: 8px;
+  margin-top: 15px;
+  background-color: #26996d;
+  border: none;
+  color: white;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ion-icon {
+  margin-left: 10px;
+}
+input {
+  border: none;
+  font-size: 0.7em;
+  margin-left: 10px;
+  width: 200px;
+}
+input:focus {
+  outline: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./profileInfo.css" />
+    <script src="./jquery3.6.0.js"></script>
+    <script src="./profileInfo.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <span class="darkmode">Dark Mode</span>
+    <div class="dark" id="dark">
+      <img src="./pictures/9073540_moon_icon.svg" />
+    </div>
+    <span class="lightmode">Light Mode</span>
+    <div class="light" id="light">
+      <img src="./pictures/9023993_sun_fill_icon.svg" />
+    </div>
+
+    <div class="container">
+      <div class="profileInfo">
+        <div>
+          <img
+            src="./pictures/403022_business man_male_user_avatar_profile_icon.png"
+            alt=""
+            width="70px"
+          />
+        </div>
+        <div>
+          <p class="name">Nyan Win Myo</p>
+          <p class="pos">Software Developer</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="hero-section">
+        <ul>
+          <li class="position">
+            <ion-icon name="desktop-outline"></ion-icon>
+            <input type="text" placeholder="Front End Developer" />
+          </li>
+          <li class="position">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <input type="text" placeholder="www.facebook.com/kelvin" />
+          </li>
+          <li class="position">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <input type="text" placeholder="www.instagram.com/kelvin" />
+          </li>
+          <li class="position">
+            <ion-icon name="language-outline"></ion-icon>
+            <input type="text" placeholder="English,France,Japanese" />
+          </li>
+          <li class="position">
+            <ion-icon name="home-outline"></ion-icon>
+            <input type="text" placeholder="USA,112 Main Road" />
+          </li>
+        </ul>
+        <button id="save">Save</button>
+      </div>
+    </div>
+  </body>
+</html>
