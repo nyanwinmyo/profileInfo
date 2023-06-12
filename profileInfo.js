@@ -1,10 +1,10 @@
 $(document).ready(function () {
      let mode = localStorage.getItem("mode");
      (mode == "0") ? dark() : light();
+     inputStored();
 
      $("#dark").click(function () {
           localStorage.setItem("mode", "0");
-
           dark();
      });
      $("#light").click(function () {
@@ -18,6 +18,9 @@ $(document).ready(function () {
                localStorage.setItem(inputName, inputValue);
           })
      })
+})
+
+function inputStored(){
      $("input").each(function () {
           var inputName = $(this).attr('placeholder');
           var storeValue = localStorage.getItem(inputName);
@@ -25,7 +28,7 @@ $(document).ready(function () {
                $(this).val(storeValue);
           }
      })
-})
+}
 
 function dark() {
      $("body").css("backgroundColor", "black");
